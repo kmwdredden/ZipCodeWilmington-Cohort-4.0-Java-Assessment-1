@@ -11,7 +11,19 @@ public class IntegerUtils {
      * @return the sum of all integers between 0 and not including `n`
      */
     public static Integer getSumOfN(Integer n) {
-        return null;
+        //Given an Integer , n, return the sum of all integers between 0 and not including n.
+        //pseudo-code
+        //if holder number is less than or equal to n then
+        //add them until you reach n
+        //you have to
+        int sum = 1;
+        for(int i = 1; i <= n; i++){
+            if(i<=n){
+                sum += i;
+            }
+        }
+
+        return sum;
     }
 
     /**
@@ -19,7 +31,18 @@ public class IntegerUtils {
      * @return the product of all integers between 0 and not including `n`
      */
     public static Integer getProductOfN(Integer n) {
-        return null;
+
+        //pseudo-code
+        //okay we definitely need a loop
+        //if holder number is less than or equal to n then
+        //multiply until you reach n
+        //you have to start at 1, if you multiply by 0 you'll just keep getting 0
+        int productOfNumber = 1;
+        for(int i = 1; i <= n; i++){
+            if(i <= n);
+                productOfNumber *= i;
+        }
+        return productOfNumber;
     }
 
     /**
