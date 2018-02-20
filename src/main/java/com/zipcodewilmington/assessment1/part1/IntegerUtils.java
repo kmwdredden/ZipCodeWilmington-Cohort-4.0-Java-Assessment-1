@@ -1,5 +1,7 @@
 package com.zipcodewilmington.assessment1.part1;
 
+import java.util.ArrayList;
+
 /**
  * Created by leon on 2/16/18.
  */
@@ -16,8 +18,8 @@ public class IntegerUtils {
         //if holder number is less than or equal to n then
         //add them until you reach n
         //you have to
-        int sum = 1;
-        for(int i = 1; i <= n; i++){
+        int sum = 0;
+        for(int i = 0; i <= n; i++){
             if(i<=n){
                 sum += i;
             }
@@ -50,6 +52,10 @@ public class IntegerUtils {
      * @return integer with identical digits in the reverse order
      */
     public static Integer reverseDigits(Integer val) {
+
+        ArrayList<Integer> backwards = new ArrayList<>(val);
+
+        for(int i =0; i < backwards.length-1; i>=0 i--)
         return null;
     }
 }

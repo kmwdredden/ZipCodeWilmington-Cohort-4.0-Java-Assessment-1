@@ -112,9 +112,11 @@ public class ArrayUtils {
      */
     public static Object[] mergeArrays(Object[] objectArray, Object[] objectArrayToAdd) {
 
-        Object newArrayLength = objectArray.length + objectArrayToAdd.length;
-        Object[] answer = new Object[(int)newArrayLength];
 
-        return answer;
+       Object[] arrayAdded = (Object[]) ArrayUtils.mergeArrays(objectArray, objectArrayToAdd);
+        //Object[] arrayAdded = objectArray.length + objectArray.length;
+
+
+        return arrayAdded;
     }
 }

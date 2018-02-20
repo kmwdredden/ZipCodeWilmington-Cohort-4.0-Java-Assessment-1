@@ -45,7 +45,7 @@ public class MultiplesDeleterTest {
         Integer[] expected = {4, 7, 10, 13, 16};
 
         // When
-        Integer[] actual = deleter.deleteMultiplesOf3(inputArray);
+        Object[] actual = deleter.deleteMultiplesOf3(inputArray);
 
         // Then
         UnitTestingUtils.assertArrayEquality(expected, actual);
